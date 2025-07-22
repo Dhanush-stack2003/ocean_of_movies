@@ -1,0 +1,68 @@
+.header {
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.header .watchList_container {
+    padding:10px 20px;
+    width: 210px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 22px;
+    font-weight: 500;
+    margin:20px 20px 0px 0px;
+    align-items: center;
+    background-color:#fac13e;
+    border-radius: 5px;
+    color: #191919;
+    gap: 10px;
+}
+
+.header .watchList_container:hover {
+    background-color: #FEDA87;
+}
+
+.header .likedMovie_container:hover {
+    background-color: #FEDA87;
+}
+
+.header .likedMovie_container {
+    padding:10px 20px;
+    width: 210px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 22px;
+    font-weight: 500;
+    margin:20px 20px 0px 0px;
+    align-items: center;
+    background-color:#fac13e;;
+    border-radius: 5px;
+    color:#191919;
+    gap: 10px;
+}
+
+@media (max-width:500px) {
+    .header {
+        height: 140px;
+        width: 100%;
+    }
+
+    .header .watchList_container {
+        width: 150px;
+        padding:10px 16px;
+        font-size: 15px;
+        margin:20px 10px 0px 0px;  
+    }
+
+    .header .likedMovie_container {
+        width: 150px;
+        padding:10px 16px;
+        font-size: 15px;
+        margin:20px 10px 0px 0px;
+    }
+}
