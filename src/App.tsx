@@ -19,11 +19,11 @@ function App() {
 
   useEffect(() => {
     const requestHandler = async () => {
-     console.log("file is loaded 2");
+     console.log(import.meta.env.VITE_OMDB_KEY);
       try {
         setTitle(query);
         const requestMovie = await fetch(
-          `http://www.omdbapi.com/?i=tt3896198&apikey=${
+          `https://www.omdbapi.com/?i=tt3896198&apikey=${
             import.meta.env.VITE_OMDB_KEY
           }&s=${query}&type=${type}&y=${year}`
         );
