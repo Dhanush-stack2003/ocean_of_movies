@@ -18,6 +18,7 @@ function App() {
 
   useEffect(() => {
     const requestHandler = async () => {
+      console.log("file is loaded")
       try {
         setTitle(query);
         const requestMovie = await fetch(
