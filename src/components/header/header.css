@@ -10,7 +10,7 @@
 
 .header .watchList_container {
     padding:10px 20px;
-    width: 200px;
+    width: 210px;
     display: flex;
     justify-content: flex-start;
     font-size: 20px;
@@ -33,10 +33,10 @@
 
 .header .likedMovie_container {
     padding:10px 20px;
-    width: 210px;
+    width: 200px;
     display: flex;
     justify-content: flex-start;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     margin:20px 20px 0px 0px;
     align-items: center;
