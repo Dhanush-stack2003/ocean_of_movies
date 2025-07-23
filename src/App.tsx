@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import WatchList from "./pages/watchList/watchList";
 import { ToastContainer } from "react-toastify";
 import FavMovies from "./components/favMovies/favMovies";
+import PageNotFound from "./components/pageNotFound/PageNotFound";
 
 function App() {
   const [searchParams] = useSearchParams();
@@ -51,6 +52,7 @@ function App() {
         <Route path="/movie/:id" element={<MovieDetail />} />
         <Route path="/watchlist" element={<WatchList />} />
         <Route path='/fav-list' element={<FavMovies/>}/>
+        <Route path='*' element={<PageNotFound/>}/>
       </Routes>
     </>
   );
