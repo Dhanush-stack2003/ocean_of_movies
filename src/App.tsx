@@ -25,6 +25,7 @@ function App() {
             import.meta.env.VITE_OMDB_KEY
           }&s=${query}&type=${type}&y=${year}`
         );
+        console.log("request url" + requestMovie)
         const result = await requestMovie.json();
         setMovieList(result.Search || []);
       } catch (error) {
