@@ -19,7 +19,7 @@ import { toast } from 'react-toastify';
     async function fetchMovieDetail() {
     setLoading(true)
     try {
-      const res = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&i=${id}`);
+      const res = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&i=${id}`);
       const result = await res.json();
       setLoading(false)
       setMovieInfo({...result});  

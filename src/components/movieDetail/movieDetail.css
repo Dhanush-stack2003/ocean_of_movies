@@ -34,7 +34,7 @@
 
 .movie_detail .liked {
     color: red;
-    border: 3px solid black;
+    background-color: #fff;
     border-radius: 50%;
     padding: 5px;
     transition: 5s all;
