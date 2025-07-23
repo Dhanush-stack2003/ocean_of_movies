@@ -9,6 +9,7 @@ import FavMovies from "./components/favMovies/favMovies";
 import PageNotFound from "./components/pageNotFound/PageNotFound";
 
 function App() {
+  console.log("file is loaded 1")
   const [searchParams] = useSearchParams();
   const year = searchParams.get("year") || "";
   const type = searchParams.get("type") || "";
@@ -18,7 +19,7 @@ function App() {
 
   useEffect(() => {
     const requestHandler = async () => {
-      console.log("file is loaded")
+     console.log("file is loaded 2");
       try {
         setTitle(query);
         const requestMovie = await fetch(
@@ -30,7 +31,7 @@ function App() {
         const result = await requestMovie.json();
         setMovieList(result.Search || []);
       } catch (error) {
-        console.log(error);
+        console.log("error" +error);
       }
     };
     requestHandler();
