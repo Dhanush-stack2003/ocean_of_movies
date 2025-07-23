@@ -42,8 +42,34 @@
     display: block;
 }
 
-@media (max-width:600px) {
+@media (min-width:310px) and (max-width:500px) {
     .go_back {
         margin: 20px auto;
+    }
+
+    .paginate {
+        margin: 20px 0px;
+    }
+
+    .paginate ul {
+        margin-bottom: 20px;
+    }
+
+    .paginate li{
+        padding: 10px;
+        background-color: royalblue;
+        color: white;
+        border-radius: 5px;
+        margin: 0px 10px;
+        font-size: 16px;
+    }
+
+    .paginate button {
+        width: 100px;
+        padding: 10px 15px;
+        font-size: 18px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 20px;
     }
 }

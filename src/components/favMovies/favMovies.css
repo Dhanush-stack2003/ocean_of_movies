@@ -1,0 +1,123 @@
+.favourite {
+    background-color: #2A2C2B;
+    height: 100vh;
+}
+
+.favourite h1 {
+    margin:0px 0px 25px 0px;
+    text-align: center;
+    padding-top: 20px;
+    color: #fac13e;
+}
+
+.favMoviesContainer {
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap: 20px;
+    padding: 30px 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.favMoviesContainer .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60vh;
+    gap: 20px;
+}
+
+.favMoviesContainer .card {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    width: 300px;
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    background-color: #3f4238;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.2s;
+}
+
+.favMoviesContainer .card:hover {
+    transform:scale(1.1);
+}
+
+.favMoviesContainer .card img {
+    height: 50px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.favMoviesContainer .card p {
+    text-align: center;
+    width: 100%;
+    color: #ffe8d6;
+}
+
+.favourite .go_home {
+    font-size: 20px;
+    background-color: #fac13e;
+    padding: 15px 20px;
+    width: 200px;
+    margin:15px auto 0 auto;
+    border-radius: 5px;
+    border: none;
+    color: #191919;
+    display: block;
+}
+
+.favourite .go_home:hover {
+    background-color: #FEDA87;
+}
+
+
+@media (min-width:320px) and (max-width:500px) {
+
+    .favourite {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    
+    .favMoviesContainer {
+        display: grid;
+        margin: 20px 0px;
+    }
+    
+    .favMoviesContainer .cards {
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .favourite .go_home {
+        padding: 15px 20px;
+        width: 200px;
+        margin:30px auto;
+    }
+}
+
+@media (min-width:501px) and (max-width:1024px) {
+
+    .favourite {
+        padding-bottom: 30px;
+    }
+
+    .favMoviesContainer {
+        display: grid;
+        padding: 30px 20px;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+
+    .favMoviesContainer .cards {
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
