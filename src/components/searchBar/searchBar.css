@@ -30,6 +30,7 @@
 }
 
 .searchbar_input {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -41,7 +42,7 @@
     position: absolute;
     z-index: 10;
     width: 400px;
-    top: 54%;
+    top: 90%;
     padding: 20px;
     border-radius: 5px;
 }
@@ -147,7 +148,8 @@
     }
 
     .searchbar input {
-        width: 100%;
+        margin: 0 auto;
+        width: 320px;
         padding: 10px;
         outline: none;
         font-size: 20px;
@@ -177,9 +179,10 @@
     }
 
     .searchbar button {
+        margin: 0 auto;
         padding: 10px 20px;
         font-size: 20px;
-        width: 100%;
+        width: 320px;
         border: none;
         border-radius: 5px;
         background-color:sienna;
@@ -189,10 +192,12 @@
     .search_history {
         background-color: #fff;
         height: auto;
+        top: 40%;
         position: absolute;
         z-index: 10;
-        width: 300px;
-        top: 49%;
+        max-width: 320px;
+        left: 50%;
+        transform: translateX(-50%);
         padding: 20px;
         border-radius: 5px;
     }
@@ -235,7 +240,7 @@
 
 }
 
-@media (min-width:501px) and (max-width:1023px) {
+@media (min-width:501px) and (max-width:1024px) {
 
     .filter_section select {
         padding: 10px 15px;
@@ -243,5 +248,16 @@
         font-size: 20px;
         border: none;
         outline: none;
+    }
+
+    .search_history {
+        background-color: #fff;
+        height: auto;
+        position: absolute;
+        z-index: 10;
+        width: 300px;
+        top: 30%;
+        padding: 20px;
+        border-radius: 5px;
     }
 }
