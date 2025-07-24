@@ -240,7 +240,7 @@
 
 }
 
-@media (min-width:501px) and (max-width:1024px) {
+@media (min-width:501px) and (max-width:1023px) {
 
     .filter_section select {
         padding: 10px 15px;
@@ -248,16 +248,5 @@
         font-size: 20px;
         border: none;
         outline: none;
-    }
-
-    .search_history {
-        background-color: #fff;
-        height: auto;
-        position: absolute;
-        z-index: 10;
-        width: 300px;
-        top: 30%;
-        padding: 20px;
-        border-radius: 5px;
     }
 }
