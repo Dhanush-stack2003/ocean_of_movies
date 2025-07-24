@@ -46,7 +46,7 @@
     gap: 10px;
 }
 
-@media (max-width:500px) {
+@media (min-width:320px) and (max-width:500px) {
     .header {
         height: 140px;
         width: 100%;
@@ -66,3 +66,4 @@
         margin:20px 10px 0px 0px;
     }
 }
+
