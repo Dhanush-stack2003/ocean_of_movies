@@ -1,4 +1,5 @@
 .watchlist {
+    min-height: 100vh;
     height: 170vh;
     background-color: #2A2C2B;
 
@@ -17,6 +18,7 @@
     grid-column: -1/1;
     text-align: center;
     color: #ccc;
+    margin: 30px 0px;
 }
 
 .watchList_container {
@@ -77,6 +79,7 @@
     }
 
     .watchlist {
+        min-height: 100vh;
         height: auto;
         padding-bottom: 25px;
     }

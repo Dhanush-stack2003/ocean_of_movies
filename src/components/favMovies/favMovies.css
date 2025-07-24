@@ -87,6 +87,7 @@
 
     .favourite {
         min-height: 100vh;
+        width: 100%;
         height: auto;
         padding-bottom: 30px;
     }
@@ -100,6 +101,12 @@
         height: auto;
         display: flex;
         flex-wrap: nowrap;
+    }
+
+    .no_liked_mov {
+        color: #ccc;
+        min-width: 0px;
+        font-size: 18px;
     }
 
     .favourite .go_home {

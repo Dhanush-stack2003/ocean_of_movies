@@ -26,7 +26,7 @@ const WatchList = () => {
 
   return (
     <div className="watchlist">
-      <h1 className="watchList_heading">My WatchLists</h1>
+      <h1 className="watchList_heading">My WatchLists 😊</h1>
       <WLPost watchList={watchList} setWatchList={setWatchList} currentPage={currentPage} onPaginate={paginate} postPerPage={postPerPage}/>
       <Paginate totalPost={watchList.length} currentPage={setCurrentPage} postPerPage={postPerPage}/>
     </div>

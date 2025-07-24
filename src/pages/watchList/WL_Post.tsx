@@ -56,7 +56,7 @@ const WLPost:React.FC<WL_props> = ({watchList,setWatchList,onPaginate,currentPag
 
       <div className="watchList_container">
         {currentPost && currentPost.length === 0 ? (
-          <p className="no_watchlist">☹ You have no watchlist</p>
+          <p className="no_watchlist">You have no watchlists.</p>
         ) : (
           currentPost.map((movie:movie) => (
             <div className="watchList_card" key={movie.Year}>

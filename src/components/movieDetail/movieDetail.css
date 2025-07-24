@@ -72,6 +72,14 @@
     margin-right: 5px;
 }
 
+.movie_detail .result {
+    color: #ccc;
+}
+
+.movie_detail_container .result {
+    color: #ccc;
+}
+
 @media (min-width:320px) and (max-width:500px) {
     .movie_detail {
         height: auto;

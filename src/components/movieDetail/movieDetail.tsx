@@ -61,7 +61,7 @@ import { toast } from 'react-toastify';
   return (
     <div className="movie_detail">
       {loading ? (
-        <p>Fetching details...</p>
+        <p className='result'>Fetching details...</p>
       ) : movieInfo && movieInfo.Response === "True" ? (
         <div className="movie_detail_container">
           <img src={movieInfo.Poster} alt="poster" />
@@ -100,7 +100,7 @@ import { toast } from 'react-toastify';
           </p>
         </div>
       ) : (
-        <p>could't find the details.</p>
+        <p className='result'>could't find the details.</p>
       )}
       <button onClick={() => navigate(-1)} className="go_back">
         Go Back
