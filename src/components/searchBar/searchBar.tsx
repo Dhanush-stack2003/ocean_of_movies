@@ -55,7 +55,7 @@ const SearchBar = () => {
     if (!debouncedValue) return;
     async function getSuggestion() {
       const requestMovie = await fetch(
-        `http://www.omdbapi.com/?i=tt3896198&apikey=${
+        `https://www.omdbapi.com/?i=tt3896198&apikey=${
           import.meta.env.VITE_OMDB_KEY
         }&s=${debouncedValue}`
       );

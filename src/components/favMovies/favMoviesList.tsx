@@ -20,7 +20,7 @@ const FavMoviesList:React.FC<favMoviesProps> = ({favMovies,currentPage,postPerPa
     
   return (
     <div className="cards">
-      {currentPost.map((item: movie, index: number) => (
+      {currentPost.length === 0 ? <p className='no_liked_mov'>No liked movies.</p> : currentPost.map((item: movie, index: number) => (
         <Link to={`/movie/${item.imdbID}`}>
           <div className="card" key={index}>
             <img src={item.Poster} alt="" />

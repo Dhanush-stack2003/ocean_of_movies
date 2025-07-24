@@ -60,6 +60,12 @@
     color: #ffe8d6;
 }
 
+.no_liked_mov {
+    color: #ccc;
+    min-width: 650px;
+    font-size: 18px;
+}
+
 .favourite .go_home {
     font-size: 20px;
     background-color: #fac13e;
@@ -80,6 +86,7 @@
 @media (min-width:320px) and (max-width:500px) {
 
     .favourite {
+        min-height: 100vh;
         height: auto;
         padding-bottom: 30px;
     }

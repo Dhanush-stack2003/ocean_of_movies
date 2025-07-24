@@ -20,7 +20,7 @@ const FavMovies= () => {
      <div className="favMoviesContainer">
       <FavMoviesList postPerPage={postPerPage} favMovies={FavMovies} currentPage={currentPage}/>
      </div>
-       <Paginate currentPage={setCurrentPage}  postPerPage={postPerPage} totalPost={FavMovies.length} />
+        <Paginate currentPage={setCurrentPage}  postPerPage={postPerPage} totalPost={FavMovies.length} />
    </div>
  );
 }
